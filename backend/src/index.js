@@ -22,6 +22,7 @@ import routerHistorial from "./routes/historial.routes.js";
 import routerMedicamento_dado from "./routes/medicamento_dado.routes.js";
 import routerTutor from "./routes/tutor.routes.js";
 import routerVisita from "./routes/visita.routes.js";
+import routeRoles from "./routes/roles.routes.js";
 
 dotenv.config();
 let PORT = process.env["PORT"];
@@ -52,7 +53,7 @@ app.use(routerHistorial);
 app.use(routerMedicamento_dado);
 app.use(routerTutor);
 app.use(routerVisita);
-
+app.use(routeRoles);
 // Middleware para rutas no encontradas (404)
 app.use(notFoundHandler);
 

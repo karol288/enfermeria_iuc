@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "d0b1a46d-d2c9-451e-a8f3-48aed42e6a56",
+		"name": "enfermeria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39727889"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\":\"Administrador\",\r\n    \"pass\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTkwMzQ2LCJleHAiOjE3MzE1OTM5NDZ9.I2GGrw_3vLOChPIrvKGxqjfDc8U2qUdsBQf2bjrHE6w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\":\"azucena\",\r\n    \"pass\":\"123\",\r\n    \"rol\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTkwMzQ2LCJleHAiOjE3MzE1OTM5NDZ9.I2GGrw_3vLOChPIrvKGxqjfDc8U2qUdsBQf2bjrHE6w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alergias_medicamentos\":\"ninguno\",\r\n    \"id_estudiante\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/alergia",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"alergia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "estudiante",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTkwMzQ2LCJleHAiOjE3MzE1OTM5NDZ9.I2GGrw_3vLOChPIrvKGxqjfDc8U2qUdsBQf2bjrHE6w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Laura\",\r\n    \"apellido\":\"Arias\",\r\n    \"tarjetaIdentidad\": 1099876545,\r\n    \"curso\": \"11-1\",\r\n    \"alergiasMedicamentos\":\"ninguno\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/estudiante",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tutor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTkwMzQ2LCJleHAiOjE3MzE1OTM5NDZ9.I2GGrw_3vLOChPIrvKGxqjfDc8U2qUdsBQf2bjrHE6w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Azucena\",\r\n    \"apellido\":\"Martinez\",\r\n    \"relacionEstudiante\":\"mama\",\r\n    \"correo\":\"mariamartinez23@gmail.com\",\r\n    \"telefono\": 3208976545\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/tutor",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tutor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "medicamento-dado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTk2MTgxLCJleHAiOjE3MzE1OTk3ODF9.4XmZg5DSM9i365jgfQqkA21kAEcz7IBLaeNeFuimEbQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dosisRecomendada\":\"1 pasta\",\r\n     \"idVisita\":1, \r\n    \"idCodigoMedicamento\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/medicamento-dado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"medicamento-dado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "codigo_medicamento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTkwMzQ2LCJleHAiOjE3MzE1OTM5NDZ9.I2GGrw_3vLOChPIrvKGxqjfDc8U2qUdsBQf2bjrHE6w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoMedicamento\":\"ABC-123\",\r\n    \"nombreMedicamento\":\"acetaminofen\",\r\n    \"cantidad\":\"67\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/codigo_medicamento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"codigo_medicamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "visita",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTk2MTgxLCJleHAiOjE3MzE1OTk3ODF9.4XmZg5DSM9i365jgfQqkA21kAEcz7IBLaeNeFuimEbQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hora\":\"03:00:00\", \r\n    \"fecha\":\"14/11/24\", \r\n    \"motivo_visita\":\"dolor de cabeza\",\r\n    \"id_estudiante\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/visita",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"visita"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "autorizacion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTk2MTgxLCJleHAiOjE3MzE1OTk3ODF9.4XmZg5DSM9i365jgfQqkA21kAEcz7IBLaeNeFuimEbQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"detallesAutorizacion\":\"autorizado\", \r\n    \"idEstudiante\":1,\r\n    \"idTutor\":1,\r\n    \"idMedicamentoDado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/autorizacion",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"autorizacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "diagnostico",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTk2MTgxLCJleHAiOjE3MzE1OTk3ODF9.4XmZg5DSM9i365jgfQqkA21kAEcz7IBLaeNeFuimEbQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"salida_institucion\":\"aprobada\", \r\n    \"mejoramiendo\":\"en proceso\", \r\n    \"id_estudiante\":1,\r\n    \"id_visita\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/diagnostico",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"diagnostico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTk2MTgxLCJleHAiOjE3MzE1OTk3ODF9.4XmZg5DSM9i365jgfQqkA21kAEcz7IBLaeNeFuimEbQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idEstudiante\":1, \r\n    \"idDiagnostico\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/historial",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"historial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rol",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9Vc3VhcmlvIjoiMSIsImlkX3JvbCI6NCwiaWF0IjoxNzMxNTk5ODY1LCJleHAiOjE3MzE2MDM0NjV9.gUM9sQtJYRvUfXSg013WDl1KAWM6a9JwfYLCNnihSKE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre_rol\":\"enfermera\",\r\n    \"descripcion_rol\":\"ayuda a la enfermera\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/rol",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"rol"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
